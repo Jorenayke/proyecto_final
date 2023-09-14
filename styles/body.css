@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    min-width: fit-content;
+
+    background-color: rgb(32, 32, 32);
+    list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    /* background-color: transparent;
+    width: 0; */
+}

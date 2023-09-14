@@ -1,0 +1,26 @@
+.up-main {
+    display: grid;
+    grid-template-columns: 25% 74%;
+    grid-template-rows: auto 605px;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: 
+        "area1 area2"
+        "area3 area4";
+}
+
+.nav-prin {
+    grid-area: area1;
+}
+
+.nav-sec {
+    grid-area: area2;
+}
+
+.menu-opti {
+    grid-area: area3;
+}
+
+.conten-prin {
+    grid-area: area4;
+}

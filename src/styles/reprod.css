@@ -1,0 +1,19 @@
+
+.reprod-foot {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-width: min-content;
+    height: max-content;
+    background-color: brown;
+}
+
+.reprod-int {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+}

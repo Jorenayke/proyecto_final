@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" defer src="/src/js/main.js"></script>
+
+    <title>Mi pagina Final</title>
+</head>
+<body class="main">
+    <main class="body-sections">
+        <header class="up-main">
+            <nav class="nav-prin">
+                <ul class="nav-bar">
+                    <li class="user-box">
+                        <button class="user-box" title="user">
+                            <img src="/src/assets/img/perfil.png" alt="" class="user-btn-img">
+                        </button>
+                    </li>
+                    <li class="bib-box">
+                        <button class="bib-box" title="Biblioteca">
+                            <img src="/src/assets/svg/carp_icon_in.svg" alt="" class="bib-btn-img">
+                        </button>
+                    </li>
+                    <li class="sear-box">
+                        <button class="search-btn">
+                            <img src="/src/assets/svg/lupa_icon_in.svg" alt="" class="search-btn-img">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <section class="nav-sec">
+                <div class="nav-sec-in">
+                    <div class="search-bar">
+                        <button class="search-btn-bar" id="busquedaIn">
+                            <img src="/src/assets/svg/lupa_icon_in.svg" alt="" class="search-btn-icon">
+                        </button>
+                        <input type="text" placeholder="Buscar" class="search-box">
+                    </div>
+                    <div class="go-ba-btn">
+                        <button class="izq-btn" id="botonBack">
+                            <img src="/src/assets/svg/flech_izq.svg" alt="" class="izq-btn-img">
+                        </button>
+                        <button class="der-btn" id="botonGo">
+                            <img src="/src/assets/svg/flech-der.svg" alt="" class="der-btn-img">
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-opti-1">
+                <button class="list-reprod">
+                    <img src="" alt="" class="incon-list-1">
+                    <p class="text-op-lis">Listas</p>
+                </button>
+                <button class="list-fav">
+                    <img src="" alt="" class="incon-list-2">
+                    <p class="text-op-fav">Me gusta</p>
+                </button>
+                <button class="list-recom">
+                    <img src="" alt="" class="incon-list-3">
+                    <p class="text-op-rec">Recomendado</p>
+                </button>
+                <ul class="agg-recien">
+                    <img src="" alt="" class="incon-list-4">
+                    <p>Escuchado Recientemente</p>
+                    <li class="album-1">
+                        <p>Opcion-1</p>
+                    </li>
+                    <li class="album-2">
+                        <p>Opcion-2</p>
+                    </li>
+                    <li class="album-3">
+                        <p>Opcion-3</p>
+                    </li>
+                    <li class="album-4">
+                        <p>Opcion-4</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="conten-prin">
+
+            </section>
+
+        </header>
+        <footer class="reprod-foot">
+            <div class="reprod-int">
+                <div class="music-in-prog">
+                    <img src="" alt="" class="portada-misc">
+                    <div class="text-music">
+                        <h4 class="name-mus">Nombre de la Cancion</h4>
+                        <p class="name-art">Artista</p>
+                    </div>
+                </div>
+                <div class="control-reprod">
+                    <audio id="reproductor" src="ruta_de_la_cancion.mp3"></audio>
+                    
+                    <div class="reprod-cont-btn">
+                        <button id="playPause">Play/Pausa</button>
+                        <button id="anterior">Anterior</button>
+                        <button id="siguiente">Siguiente</button>
+                        <button id="repeat">Repetir</button>
+                        <button id="aleatorio">Aleatorio</button>
+                    </div>
+                    
+                    <div class="tempo-mus">
+                        <input type="range" id="barraReproduccion" min="0" max="100" value="0">
+                        <span id="tiempoActual">0:00</span> / <span id="tiempoTotal">0:00</span>
+                    </div>
+                    
+                    <script src="tu_script.js"></script>
+                </div>
+                <div>
+                    <button class="list-reprod" id="mostrarLista">
+                        <img src="" alt="" class="list-reprod-img">
+                    </button>
+                    <div id="listaReproduccion" style="display: none;">
+                        <!-- Aquí puedes agregar la lista de canciones -->
+                    </div>
+                    <div>
+                        <img src="" alt="" class="vol-icon-img">
+                        <input type="range" id="volumen" min="0" max="1" step="0.1" value="1" >  
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    /* background-color: rgb(32, 32, 32); */
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(/src/assets/svg/Background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.body-sections {
+    min-width: fit-content;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+::-webkit-scrollbar {
+    /* background-color: transparent;
+    width: 0; */
+}

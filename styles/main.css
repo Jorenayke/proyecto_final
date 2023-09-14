@@ -1,0 +1,56 @@
+.pag-conten {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 70px 70%;
+    row-gap: 10px;
+    column-gap: 10px;
+    min-height: fit-content;
+    min-width: fit-content;
+    grid-template-areas: 
+        "area1 area2"
+        "area3 area4"
+}
+
+.caja-in {
+    grid-area: area1;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: brown;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.ini-btn {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
+    background-color: chartreuse;
+}
+
+.bib-btn {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
+    background-color: chartreuse;
+}
+
+.conf-btn {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
+    background-color: chartreuse;
+}
+
+.caja-op,. {
+    grid-area: area3;
+}
+
+.navbar {
+    grid-area: area2;
+}
+
+.conten-nav {
+    grid-area: area4;
+}
