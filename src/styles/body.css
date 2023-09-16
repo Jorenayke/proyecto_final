@@ -6,20 +6,24 @@
     /* background-color: rgb(32, 32, 32); */
     list-style: none;
     text-decoration: none;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
     background-image: url(/src/assets/svg/Background.svg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .body-sections {
-    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     overflow: hidden;
-    margin: 10px;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    flex: auto;
 }
 
 ::-webkit-scrollbar {

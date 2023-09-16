@@ -1,39 +1,62 @@
 
     /* Barra de navegacion principal */
 .nav-prin {
-    height: 100%;
+    height: fit-content;
     width: 100%;
 }
 
 .nav-bar{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(169, 169, 169, .50);
+    background-color: rgba(187, 187, 187, 0.5);
     min-width: max-content;
     height: auto;
     border-radius: 8px;
-    padding: 10px;
+    padding: 6px;
+
+    align-items: center;
 }
 
 .user-box {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
-    height: 40px;
     width: 40px;
-    border-width: 0;
+    height: 40px;    
+}
+
+.user-btn {
+    border-style: none;
+    width: 40px;
+    height: max-content;
+    background-color: transparent;
 }
 
 .user-btn-img {
     width: 40px;
     height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .bib-box {
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 40px;
     width: 40px;
-    border-width: 0;
+}
+
+.bib-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    opacity: 0.6;
+
+    border-style: none;
+    background-color: transparent;
 }
 
 .bib-btn-img {
@@ -45,29 +68,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
-    border-width: 0;
-    border-bottom: 0;
 }
 
-.search-btn{
+.sear-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-style: none;
+    width: 40px;
+    height: 40px;
+    opacity: 0.6;
     background-color: transparent;
 }
 
-.search-btn-img {
+.sear-btn-img {
     height: 35px;
     width: 35px;
+    display: flex;
 }
 
 
     /* Barra de navegacion secundaria */
 
 .nav-sec {
-    width: 100%;
     height: 100%;
-    min-width: max-content;
+    min-width: min-content;
+    align-items: center;
 }
 
 .nav-sec-in {
@@ -82,8 +108,8 @@
 .search-bar {
     display: flex;
     width: auto;
-    height: auto;
-    background-color: rgba(155, 155, 155, 0.60);
+    height: fit-content;
+    background-color: rgba(187, 187, 187, 0.65);
     border-radius: 20px;
     align-items: center;
     min-width: fit-content;
@@ -100,7 +126,7 @@
 }
 
 .search-box{
-    background-color: rgba(221, 221, 221, 0.7);
+    background-color: rgba(226, 226, 226, 0.85);
     border-width: 0;
     height: 40px;
     border-radius: 20px;
@@ -119,16 +145,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(169, 169, 169, .50);
+    background-color: rgb(187, 187, 187);
     height: 40px;
     width: 40px;
     border-width: 0;
     border-radius: 20px;
-
+    opacity: 0.55;
 }
 
 .izq-btn-img, .der-btn-img {
-    opacity: 0.55;
+    opacity: 0.7;
     height: 70%;
 }
 

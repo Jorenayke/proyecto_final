@@ -1,0 +1,66 @@
+@import "./variables.scss";
+@import "./track.scss";
+@import "./header.scss";
+@import "./currentSong.scss";
+@import "./background.scss";
+@import "./scrollbar.scss";
+@import "./responsiveMenu.scss";
+@import "./loader.scss";
+
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font_family;
+  color: $color_white;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  overflow: hidden;
+  background-color: $color_main;
+  height: 100vh;
+}
+
+main#main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: $color_main_50;
+  h2.title {
+    padding: 1em;
+    padding-bottom: 0;
+  }
+}
+hr {
+  margin: .7em 0;
+  border: none;
+  height: 2px;
+  background-image: linear-gradient(to left, #00000000, $color_main_75, #00000000);
+  // background-color: $color_main_50;
+}
+
+#app {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.container {
+  padding: 1.3em 0;
+  margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+}

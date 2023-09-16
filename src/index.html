@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpack JavaScript Vanilla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <div id="background">
+      <img src="/assets/svg/backgrounddesing.svg" alt="Background Desing">
+    </div>
+    <div id="responsive_menu">
+      <img src="/assets/svg/burger.svg" alt="">
+    </div>
+    <div class="relative">
+      <header id="header">
+        <div class="container">
+          <h1 class="title">WebMusicCloud</h1>
+        </div>
+        <div class="options">
+          <div id="profile">
+            <img src="/assets/img/profile.jpg" alt="">
+            <div class="data">
+              <h3>Bobby Stephens</h3>
+              <p>bobby.stephens@example.com</p>
+              <span>Online</span>
+            </div>
+          </div>
+          <nav class="navbar">
+            <ul class="list">
+              <li>
+                <img src="/assets/svg/home.svg" alt="">
+                <span>Inicio</span>
+              </li>
+              <li>
+                <img src="/assets/svg/search.svg" alt="">
+                <span>Buscar</span>
+              </li>
+              <li>
+                <img src="/assets/svg/library.svg" alt="">
+                <span>Tu Biblioteca</span>
+              </li>
+            </ul>
+            <ul class="list">
+              <li>
+                <img src="/assets/svg/heart.svg" alt="">
+                <span>Me gustan</span>
+              </li>
+              <li>
+                <img src="/assets/svg/added.svg" alt="">
+                <span>Crear Playlist</span>
+              </li>
+            </ul>
+            <ul class="list">
+              <li>
+                <img src="/assets/svg/settings.svg" alt="">
+                <span>Configuraciones</span>
+              </li>
+              <li>
+                <img src="/assets/svg/poweroff.svg" alt="">
+                <span>Salir</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <main id="main">
+      <h2 class="title">
+        Lista de Reproducción
+        <hr>
+      </h2>
+      <div id="track_list">
+        <span id="loader"></span>
+      </div>
+      <div id="current_song">
+      </div>
+    </main>
+  </div>
+</body>
+</html>

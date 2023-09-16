@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script type="module" defer src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
+    <script type="reproductor" src="/src/js/reproduc.js"></script>
 
     <title>Mi pagina Final</title>
 </head>
 <body class="main">
     <main class="body-sections">
+        <div id="pistaActual"></div>
         <header class="up-main">
             <nav class="nav-prin">
                 <ul class="nav-bar">
                     <li class="user-box">
-                        <button class="user-box" title="user">
+                        <button class="user-btn" title="Inicio">
                             <img src="/src/assets/img/perfil.png" alt="" class="user-btn-img">
                         </button>
                     </li>
                     <li class="bib-box">
-                        <button class="bib-box" title="Biblioteca">
+                        <button class="bib-btn" title="Biblioteca">
                             <img src="/src/assets/svg/carp_icon_in.svg" alt="" class="bib-btn-img">
                         </button>
                     </li>
                     <li class="sear-box">
-                        <button class="search-btn">
-                            <img src="/src/assets/svg/lupa_icon_in.svg" alt="" class="search-btn-img">
+                        <button class="sear-btn" title="Buscar">
+                            <img src="/src/assets/svg/lupa_icon_in.svg" alt="" class="sear-btn-img">
                         </button>
                     </li>
                 </ul>
             </nav>
             <section class="nav-sec">
                 <div class="nav-sec-in">
-                    <div class="search-bar">
+                    <div class="search-bar" title="Buscar">
                         <button class="search-btn-bar" id="busquedaIn">
                             <img src="/src/assets/svg/lupa_icon_in.svg" alt="" class="search-btn-icon">
                         </button>
@@ -80,8 +82,8 @@
                 </ul>
             </section>
 
-            <section class="conten-prin">
-
+            <section class="conten-prin" id="contenPrin">
+                <span id="contenPrin-lis"></span>
             </section>
 
         </header>
@@ -90,37 +92,46 @@
                 <div class="music-in-prog">
                     <img src="" alt="" class="portada-misc">
                     <div class="text-music">
-                        <h4 class="name-mus">Nombre de la Cancion</h4>
-                        <p class="name-art">Artista</p>
+                        <div class="track" id="nameTrack">
+                            <a class="name-mus">Nombre de la Cancion</a>
+                        </div>
+                        <div class="author" id="nameAuthor">
+                            <a class="name-art">Artista</a>
+                        </div>
                     </div>
                 </div>
                 <div class="control-reprod">
-                    <audio id="reproductor" src="ruta_de_la_cancion.mp3"></audio>
-                    
                     <div class="reprod-cont-btn">
-                        <button id="playPause">Play/Pausa</button>
-                        <button id="anterior">Anterior</button>
-                        <button id="siguiente">Siguiente</button>
-                        <button id="repeat">Repetir</button>
-                        <button id="aleatorio">Aleatorio</button>
+                        <div class="reprod-btn">
+                            <button id="playPause" class="pla-pau-btn" title="Play/Pausa"><img src="/src/assets/svg/pla-pau.svg" alt="" class="pla-pau-img"></button>
+                            <button id="back" class="back-btn" title="Anterior"><img src="/src/assets/svg/back.svg" alt="" class="back-img"></button>
+                            <button id="next" class="next-btn" title="Siguiente"><img src="/src/assets/svg/next.svg" alt="" class="next-img"></button>
+
+                            <!-- <button id="repeat" class="repeat-btn" title="Repetir"><img src="/src/assets/svg/repeat-icon-defaul.svg" alt="" class="repe-img"></button>
+                            <button id="random" class="random-btn" title="Aleatorio"><img src="/src/assets/svg/random.svg" alt="" class="rand-img"></button> -->
+
+                        </div>
                     </div>
                     
                     <div class="tempo-mus">
+                        <div class="tempo">
+                            <div id="tiempoActual" class="time-izq">00:00</div>
+                            <div id="tiempoTotal" class="time-der">00:00</div>
+                        </div>
                         <input type="range" id="barraReproduccion" min="0" max="100" value="0">
-                        <span id="tiempoActual">0:00</span> / <span id="tiempoTotal">0:00</span>
                     </div>
                     
+                    <audio id="reproductor" src="ruta_de_la_cancion.mp3"></audio>
                     <script src="tu_script.js"></script>
                 </div>
-                <div>
-                    <button class="list-reprod" id="mostrarLista">
-                        <img src="" alt="" class="list-reprod-img">
+                <div class="vol-lis">
+                    <button class="list-in-prog" id="mostrarLista">
+                        <img src="/src/assets/svg/list-icon.svg" alt="" class="list-in-prog-img">
                     </button>
-                    <div id="listaReproduccion" style="display: none;">
-                        <!-- Aquí puedes agregar la lista de canciones -->
-                    </div>
-                    <div>
-                        <img src="" alt="" class="vol-icon-img">
+                    <div class="vol-contr">
+                        <button class="mute-btn" id="muteButton">
+                            <img src="/src/assets/svg/vol-icon.svg" alt="" class="vol-icon-img">
+                        </button>
                         <input type="range" id="volumen" min="0" max="1" step="0.1" value="1" >  
                     </div>
                 </div>
