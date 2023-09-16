@@ -1,17 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-
-    overflow: hidden;
-    /* background-color: rgb(32, 32, 32); */
-    list-style: none;
-    text-decoration: none;
-}
-
 body {
-    background-image: url(/src/assets/svg/Background.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-image: url(/src/assets/svg/Background.svg); */
+    background-color: #D12AB2;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
 
 }
 
