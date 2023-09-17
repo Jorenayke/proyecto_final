@@ -8,6 +8,7 @@ import '/src/styles/reprod.css';
 import '/src/styles/animaciones.css';
 
 import { conexApi } from './conex-api.js';
+import { itemSongSect, currentSongSect } from './mainData.js';
 
 conexApi((res) => {
     removeAllChild(contenPrin)

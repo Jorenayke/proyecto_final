@@ -1,16 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-
     overflow: hidden;
-    /* background-color: rgb(32, 32, 32); */
     list-style: none;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
 }
 
 body {
-    background-image: url(/src/assets/svg/Background.svg);
+    background-image: url(/Background.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -24,9 +22,4 @@ body {
     position: absolute;
     justify-content: center;
     flex: auto;
-}
-
-::-webkit-scrollbar {
-    /* background-color: transparent;
-    width: 0; */
 }
