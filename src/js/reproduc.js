@@ -12,11 +12,11 @@ const contenPrin = document.getElementById('contenPrin');
 
 // Función para cambiar la imagen del botón de reproducción
 function changePlayButtonImage() {
-  if (playButton.src.includes("./src/svg/pla-pau.svg")) {
-    playButton.src = "./src/svg/pla-pau-variant.svg";
+  if (playButton.src.includes("/pla-pau.svg")) {
+    playButton.src = "/pla-pau-variant.svg";
   } 
   else {
-    playButton.src = "./src/svg/pla-pau.svg";
+    playButton.src = "/pla-pau.svg";
   }
 }
 

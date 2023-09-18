@@ -37,7 +37,7 @@
                         <button class="search-btn-bar" id="busquedaIn">
                             <img src="/lupa_icon_in.svg" alt="" class="search-btn-icon">
                         </button>
-                        <input type="text" placeholder="Buscar" class="search-box">
+                        <input type="text" placeholder="Buscar" class="search-box" id="searchBox">
                     </div>
                     <div class="go-ba-btn">
                         <button class="izq-btn" id="botonBack">
@@ -52,41 +52,65 @@
 
             <section class="menu-opti-1">
                 <button class="list-reprod">
-                    <img src="" alt="" class="incon-list-1">
+                    <img src="/carp_icon_op.svg" alt="" class="incon-list-1">
                     <p class="text-op-lis">Listas</p>
                 </button>
+                <div class="separador"></div>
                 <button class="list-fav">
-                    <img src="" alt="" class="incon-list-2">
+                    <img src="/like-icon.svg" alt="" class="incon-list-2">
                     <p class="text-op-fav">Me gusta</p>
                 </button>
+                <div class="separador"></div>
                 <button class="list-recom">
-                    <img src="" alt="" class="incon-list-3">
+                    <img src="/public/recom-icon.svg" alt="" class="incon-list-3">
                     <p class="text-op-rec">Recomendado</p>
                 </button>
-                <ul class="agg-recien">
-                    <img src="" alt="" class="incon-list-4">
-                    <p>Escuchado Recientemente</p>
-                    <li class="album-1">
-                        <p>Opcion-1</p>
-                    </li>
-                    <li class="album-2">
-                        <p>Opcion-2</p>
-                    </li>
-                    <li class="album-3">
-                        <p>Opcion-3</p>
-                    </li>
-                    <li class="album-4">
-                        <p>Opcion-4</p>
-                    </li>
-                </ul>
+                <div class="separador"></div>
+                <button class="recient-escu">
+                    <img src="/recent-icon.svg" alt="" class="incon-list-4">
+                    <p class="text-op-res">Escuchado reciente</p>
+                </button>
+                <div class="separador"></div>
+                <div class="recient-escu-lis">
+                    <ul class="agg-recien">
+                        <li class="album">
+                            <img src="" alt="" class="img-m">
+                            <div class="text-sect">
+                                <h4 class="titul-m">Titulo Musica 1</h4>
+                                <p class="text-m">Artista</p>
+                            </div>
+                        </li>
+                        <li class="album">
+                            <img src="" alt="" class="img-m">
+                            <div class="text-sect">
+                                <h4 class="titul-m">Titulo Musica 2</h4>
+                                <p class="text-m">Artista</p>
+                            </div>
+                        </li>
+                        <li class="album">
+                            <img src="" alt="" class="img-m">
+                            <div class="text-sect">
+                                <h4 class="titul-m">Titulo Musica 3</h4>
+                                <p class="text-m">Artista</p>
+                            </div>
+                        </li>
+                        <li class="album">
+                            <img src="" alt="" class="img-m">
+                            <div class="text-sect">
+                                <h4 class="titul-m">Titulo Musica 4</h4>
+                                <p class="text-m">Artista</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section class="conten-prin" id="contenPrin">
-                <!-- <div id="contenPriLis" class="trakList">
+                <div id="contenPriLis" class="trakList">
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -100,7 +124,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -114,7 +138,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -128,7 +152,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -142,7 +166,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -156,7 +180,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -170,7 +194,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -184,7 +208,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -198,7 +222,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -212,7 +236,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -226,7 +250,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -240,7 +264,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -254,7 +278,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -268,7 +292,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -282,7 +306,7 @@
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
-                            <h4 class="titul">Titulo 1</h4>
+                            <a class="titul">Titulo 1</a>
                             <a href="" class="artist">Artist</a>
                         </div>
                         <div class="like-sect">
@@ -291,9 +315,38 @@
                             </button>
                         </div>
                     </div>
-                </div> -->
+                </div>
+                <div id="contenPriLis" class="trakList">
+                    <img src="" alt="" id="imgTrak" class="imgTrack">
+                    <div class="data-song">
+                        <div class="text-song">
+                            <a class="titul">Titulo 1</a>
+                            <a href="" class="artist">Artist</a>
+                        </div>
+                        <div class="like-sect">
+                            <button class="like-btn">
+                                <img src="/like-icon-variant.svg" alt="" class="like-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="contenPriLis" class="trakList">
+                    <img src="" alt="" id="imgTrak" class="imgTrack">
+                    <div class="data-song">
+                        <div class="text-song">
+                            <a class="titul">Titulo 1</a>
+                            <a href="" class="artist">Artist</a>
+                        </div>
+                        <div class="like-sect">
+                            <button class="like-btn">
+                                <img src="/like-icon-variant.svg" alt="" class="like-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div> 
             </section>
-
+            <!-- <div id="pistaActual"></div> -->
+            
         </header>
         <footer class="reprod-foot">
             <div class="reprod-int">
@@ -315,8 +368,8 @@
                             <button id="back" class="back-btn" title="Anterior"><img src="/back.svg" alt="" class="back-img"></button>
                             <button id="next" class="next-btn" title="Siguiente"><img src="/next.svg" alt="" class="next-img"></button>
 
-                            <!-- <button id="repeat" class="repeat-btn" title="Repetir"><img src="/repeat-icon-defaul.svg" alt="" class="repe-img"></button>
-                            <button id="random" class="random-btn" title="Aleatorio"><img src="/random.svg" alt="" class="rand-img"></button> -->
+                            <button id="repeat" class="repeat-btn" title="Repetir"><img src="/repeat-icon-defaul.svg" alt="" class="repe-img"></button>
+                            <button id="random" class="random-btn" title="Aleatorio"><img src="/random.svg" alt="" class="rand-img"></button>
 
                         </div>
                     </div>
@@ -346,5 +399,4 @@
             </div>
         </footer>
     </main>
-    <div id="pistaActual"></div>
 </body>

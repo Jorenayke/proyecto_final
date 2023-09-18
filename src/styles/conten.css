@@ -1,90 +1,15 @@
 .conten-prin {
     background-color: rgba(51, 51, 51, 0.45);
     border-radius: 8px;
-    min-height: min-content;
-    min-width: min-content;
-    padding: 15px;
+    padding: 25px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: first baseline;
-    overflow: auto;
+    gap: 20px;
+    position: relative;
+    overflow: overlay;
 }
 
-.trakList {
-    background-color: rgba(10, 10, 10, 0.60);
-    width: fit-content;
-    height: fit-content;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-}
+.conten-prin::-webkit-scrollbar {-webkit-appearance: none; position: relative;} .conten-prin::-webkit-scrollbar:vertical {width:8px;} .conten-prin::-webkit-scrollbar-button:increment {display: none;} .conten-prin::-webkit-scrollbar-thumb {background-color: rgba(175, 175, 175, 0.3); border-radius: 20px;} .conten-prin::-webkit-scrollbar-track {border-radius: 10px;}
 
-.imgTrack {
-    width: 150px;
-    height: 150px;
-    background-color: green;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    margin-bottom: 5px;
-}
-
-.dataSong {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.text-song {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    text-decoration: none;
-    color
-}
-
-.titul {
-    display: flex;
-    align-items: center;
-    height: 25px;
-    font-size: 14px;
-    font-weight: 900;
-    color: #e6e6e6;
-    opacity: 0.9;
-    letter-spacing: 1px;
-}
-
-.artist {
-    display: flex;
-    align-items: center;
-    height: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: 0.7;
-    letter-spacing: 1px;
-    color: #e8e8e8;
-}
-
-.like-sect {
-    display: flex;
-    justify-content: center;
-}
-
-.like-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35px;
-    width: 35px;
-    margin: 7px 5px;
-    border-style: none;
-    background-color: transparent;
-    opacity: 0.7;
-}
-
-.like-img {
-    height: 35px;
-    width: 35px;
-}
+.trakList {background-color: rgba(10, 10, 10, 0.60); width: fit-content; height: fit-content; border-radius: 5px; display: flex; flex-direction: column; margin: 10px;} .imgTrack {width: 150px; height: 150px; background-color: green; border-top-right-radius: 5px; border-top-left-radius: 5px; margin-bottom: 5px;} .dataSong {display: flex; flex-direction: column; justify-content: center;} .text-song {display: flex; flex-direction: column; margin: 5px; text-decoration: none;} .titul {display: flex; align-items: center; height: 25px; font-size: 14px; font-weight: 900; color: #e6e6e6; opacity: 0.9; letter-spacing: 1px;} .artist {display: flex; align-items: center; height: 20px; font-size: 12px; font-weight: 600; opacity: 0.7; letter-spacing: 1px; color: #e8e8e8;} .like-sect {display: flex; justify-content: center;} .like-btn {display: flex; justify-content: center; align-items: center; height: 35px; width: 35px; margin: 7px 5px; border-style: none; background-color: transparent; opacity: 0.7;} .like-img {height: 35px; width: 35px;}

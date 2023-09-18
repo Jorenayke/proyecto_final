@@ -1,30 +1,51 @@
-export const itemSongSect = (song, event = ()=>{}) => {
+export const itemSong = document.getElementById('contenPrin') =>{
     const div = document.createElement('div');
-    div.addEventListener('click', () => {
-      event(song)
-    })
+    
     div.classList.add('song')
-    div.innerHTML = `
+    div.innerHTML =`
         <img src="${song.path.front}">
-        <div class="description">
-          <h4>${song.title}</h4>
-          <p>${song.author}</p>
+        <div class="data-song">
+          <div class="text-song"
+            <h4 class="titul">${song.title}</h4>
+            <a calss="artist">${song.author}</a>
+            <p class="duration">${song.duration}</p>
+          </div>
+          <div class="like-sect">
+            <button class="like-btn">
+              <img src="/like-icon-variant.svg" class="like-icon">
+            </button>
+          </div>
         </div>
-        <p class="duration">${song.duration}</p>
     `;
-    return div
-  }
-  
-  export const currentSongSect = (song) => {
-    const div = document.createElement('div');
-    div.classList.add('song')
-    div.innerHTML = `
-        <img src="${song.path.front}">
-        <div class="description">
-          <h4>${song.title}</h4>
-          <p>${song.author}</p>
+}
+
+
+
+    // Ejemplo IA
+export const itemSongSect = await conexApi(track, event = ()=>{}) => {
+
+    itemSongSect.forEach((track) => {
+      const elementoPista = document.createElement('div');
+      elementoPista.id = 'contenPriLis';
+      elementoPista.classList.add('trakList');
+      elementoPista.innerHTML = `
+        <img src="${track.path.front}" id="imgTrak" class="imgTrack">
+        <div class="data-song">
+          <div class="text-song">
+            <h4 class="titul">${track.title}</h4>
+            <a href="" class="artist">${track.author}</a>
+            <p class="duration">${track.duration}</p>
+          </div>
+          <div class="like-sect">
+            <button class="like-btn">
+              <img src="/like-icon-variant.svg" alt="" class="like-icon">
+            </button>
+          </div>
         </div>
-        <audio src="${song.path.audio}" controls autoplay>
-    `;
+      `;
+
+      document.getElementById('contenPriLis').appendChild(elementoPista);
+    });
     return div
-  }
+  };
+

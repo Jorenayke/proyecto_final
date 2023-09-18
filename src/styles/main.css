@@ -1,7 +1,8 @@
 .up-main {
     display: grid;
     grid-template-columns: 20% auto;
-    grid-template-rows: max-content;
+    grid-template-rows: min-content;
+    overflow: hidden;
     row-gap: 10px;
     column-gap: 10px;
     grid-template-areas: 
@@ -14,4 +15,4 @@
     padding-bottom: 5px;
 }
 
-.nav-prin {grid-area: area1;} .nav-sec {grid-area: area2;} .menu-opti {grid-area: area3;} .conten-prin {   grid-area: area4;}
+.nav-prin {grid-area: area1;} .nav-sec {grid-area: area2;} .menu-opti {grid-area: area3;} .conten-prin {   grid-area: area4; overflow-y: hidden; position:sticky ;}
