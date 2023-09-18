@@ -1,4 +1,4 @@
-export const itemSong = document.getElementById('contenPrin') =>{
+export const itemSong = (song) =>{
     const div = document.createElement('div');
     
     div.classList.add('song')
@@ -17,35 +17,37 @@ export const itemSong = document.getElementById('contenPrin') =>{
           </div>
         </div>
     `;
+
+    return div
 }
 
 
 
     // Ejemplo IA
-export const itemSongSect = await conexApi(track, event = ()=>{}) => {
+// export const itemSongSect = async (track, event = ()=>{}) => {
 
-    itemSongSect.forEach((track) => {
-      const elementoPista = document.createElement('div');
-      elementoPista.id = 'contenPriLis';
-      elementoPista.classList.add('trakList');
-      elementoPista.innerHTML = `
-        <img src="${track.path.front}" id="imgTrak" class="imgTrack">
-        <div class="data-song">
-          <div class="text-song">
-            <h4 class="titul">${track.title}</h4>
-            <a href="" class="artist">${track.author}</a>
-            <p class="duration">${track.duration}</p>
-          </div>
-          <div class="like-sect">
-            <button class="like-btn">
-              <img src="/like-icon-variant.svg" alt="" class="like-icon">
-            </button>
-          </div>
-        </div>
-      `;
+//     itemSongSect.forEach((track) => {
+//       const elementoPista = document.createElement('div');
+//       elementoPista.id = 'contenPriLis';
+//       elementoPista.classList.add('trakList');
+//       elementoPista.innerHTML = `
+//         <img src="${track.path.front}" id="imgTrak" class="imgTrack">
+//         <div class="data-song">
+//           <div class="text-song">
+//             <h4 class="titul">${track.title}</h4>
+//             <a href="" class="artist">${track.author}</a>
+//             <p class="duration">${track.duration}</p>
+//           </div>
+//           <div class="like-sect">
+//             <button class="like-btn">
+//               <img src="/like-icon-variant.svg" alt="" class="like-icon">
+//             </button>
+//           </div>
+//         </div>
+//       `;
 
-      document.getElementById('contenPriLis').appendChild(elementoPista);
-    });
-    return div
-  };
+//       document.getElementById('contenPriLis').appendChild(elementoPista);
+//     });
+//     return div
+//   };
 

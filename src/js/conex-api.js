@@ -1,5 +1,5 @@
-export const conexApi = (mediasong) => {
+export const conexApi = (callback) => {
   fetch ('https://leonardoapi.onrender.com/music')
     .then(response => response.json())
-    .then(response => mediasong(response));
+    .then(response => callback(response));
 }
