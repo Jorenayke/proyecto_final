@@ -70,7 +70,7 @@
                     <img src="/recent-icon.svg" alt="" class="incon-list-4">
                     <p class="text-op-res">Escuchado reciente</p>
                 </button>
-                <div class="separador"></div>
+                <!-- <div class="separador"></div>
                 <div class="recient-escu-lis">
                     <ul class="agg-recien">
                         <li class="album">
@@ -102,11 +102,11 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </section>
 
             <section class="conten-prin" id="contenPrin">
-                <div id="contenPriLis" class="trakList">
+                <!-- <div id="contenPriLis" class="trakList">
                     <img src="" alt="" id="imgTrak" class="imgTrack">
                     <div class="data-song">
                         <div class="text-song">
@@ -343,25 +343,24 @@
                             </button>
                         </div>
                     </div>
-                </div> 
+                </div>  -->
             </section>
-            <!-- <div id="pistaActual"></div> -->
             
         </header>
         <footer class="reprod-foot">
             <div class="reprod-int">
-                <div class="music-in-prog">
+                <!-- <div class="music-in-prog">
                     <img src="" alt="" class="portada-misc">
                     <div class="text-music">
                         <div class="track" id="nameTrack">
-                            <a class="name-mus">Nombre de la Cancion</a>
+                            <a href="" class="name-mus">Nombre de la Cancion</a>
                         </div>
                         <div class="author" id="nameAuthor">
-                            <a class="name-art">Artista</a>
+                            <a  href="" class="name-art">Artista</a>
                         </div>
                     </div>
                 </div>
-                <div class="control-reprod">
+                <div class="control-reprod" id="controlReprod">
                     <div class="reprod-cont-btn">
                         <div class="reprod-btn">
                             <button id="playPause" class="pla-pau-btn" title="Play/Pausa"><img src="/pla-pau.svg" alt="" class="pla-pau-img"></button>
@@ -373,17 +372,16 @@
 
                         </div>
                     </div>
-                    
-                    <div class="tempo-mus">
-                        <div class="tempo">
-                            <div id="tiempoActual" class="time-izq">00:00</div>
-                            <div id="tiempoTotal" class="time-der">00:00</div>
+                    <div class="reprod-control-view">
+                        <div class="tempo-mus">
+                            <div class="tempo">
+                                <div id="tiempoActual" class="time-izq">00:00</div>
+                                <div id="tiempoTotal" class="time-der">00:00</div>
+                            </div>
+                            <input type="range" id="barraReproduccion" min="0" max="100" value="0">
                         </div>
-                        <input type="range" id="barraReproduccion" min="0" max="100" value="0">
+                        <audio id="reproductor" src=""></audio>
                     </div>
-                    
-                    <audio id="reproductor" src="ruta_de_la_cancion.mp3"></audio>
-                    <script src="tu_script.js"></script>
                 </div>
                 <div class="vol-lis">
                     <button class="list-in-prog" id="mostrarLista">
@@ -395,7 +393,7 @@
                         </button>
                         <input type="range" id="volumen" min="0" max="1" step="0.1" value="1" >  
                     </div>
-                </div>
+                </div> -->
             </div>
         </footer>
     </main>

@@ -47,3 +47,7 @@
 .mute-btn {height: 25px; width: 25px; background-color: transparent; border-width: 0; opacity: 0.7;}
 
 .vol-contr {display: flex; align-items: center; width: fit-content; align-items: center; gap: 8px;} .vol-icon-img {height: 22px; width: 22px;} #volumen {height: auto; width: 95px;}
+
+#pistaActual {
+    position: sticky;
+}

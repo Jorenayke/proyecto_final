@@ -1,3 +1,5 @@
+import { currentSongReprod } from "./mainData";
+
 // Obtenemos los elementos del DOM
 const playButton = document.getElementById('playPause');
 const backButton = document.getElementById('back');
