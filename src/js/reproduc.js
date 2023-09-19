@@ -1,4 +1,4 @@
-import { currentSongReprod } from "./mainData";
+// import { currentSongReprod } from "./mainData";
 
 // Obtenemos los elementos del DOM
 const playButton = document.getElementById('playPause');
@@ -10,7 +10,6 @@ const timeTotal = document.getElementById('tiempoTotal');
 const muteButton = document.getElementById('muteButton');
 const volumeBar = document.getElementById('volumen');
 const contenPrin = document.getElementById('contenPrin');
-
 
 // Función para cambiar la imagen del botón de reproducción
 function changePlayButtonImage() {

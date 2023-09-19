@@ -6,7 +6,7 @@
 
 .music-in-prog {padding: 0 10px; display: flex; gap: 10px; width: auto;}
 
-.portada-misc {height: 50px; width: 50px; background-color: aqua; border-style: 0; border-radius: 4px;}
+.portada-misc {height: 70px; width: 70px; background-color: aqua; border-style: 0; border-radius: 4px;}
 
 .text-music {width: 210px;} .track {width: fit-content; opacity: 0.9;} .author {width: fit-content; opacity: 0.7;} .name-mus{font-weight: 700; font-size: 16px; color: #e6e6e6;} .name-art {font-weight: 400; font-size: 12px; color: #e6e6e6;}
 

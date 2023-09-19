@@ -24,6 +24,7 @@ export const itemSongBox = (song, event = ()=>{}) =>{
 }
 
 export const currentSongReprod = (song) => {
+
   const div = document.createElement('div');
   div.classList.add('song')
   
